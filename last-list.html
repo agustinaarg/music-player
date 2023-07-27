@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last listening</title>
+    <link rel="stylesheet" href="style.css" > 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <header>
+        <div class="menu_side">
+            <h1>Music Player</h1>
+            <div class="playlist">
+                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i><a href="index.html">Playlist</a></h4>
+                <h4 ><span></span><i class="bi bi-music-note-beamed"></i> <a href="last-list.html">Last Listening</a></h4>
+    
+            </div>
+             <!--SIDE-->
+            <div class="menu_song">
+                <li class="song song_item">
+                    <span>01</span>
+                    <img src="img/music/7.jpg" alt="Arctic Monkeys">
+                    <h5>
+                        The Ultracheese
+                        <div class="subtitle">Arctic Monkeys</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="10"></i>
+                </li>
+                <li class="song song_item">
+                    <span>02</span>
+                    <img src="img/music/11.jpeg" alt="Lana Del Rey">
+                    <h5>
+                        Shades of Cool 
+                        <div class="subtitle">Lana Del Rey</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="11"></i>
+                </li>
+                <li class="song song_item">
+                    <span>03</span>
+                    <img src="img/music/12.jpeg" alt="The Neighbourhood">
+                    <h5>
+                        Softcore
+                        <div class="subtitle">The Neighbourhood</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="12"></i>
+                </li>
+                <li class="song song_item">
+                    <span>04</span>
+                    <img src="img/music/13.webp" alt="Arctic Monkeys">
+                    <h5>
+                        Body Paint
+                        <div class="subtitle">Arctic Monkeys</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="13"></i>
+                </li>
+                <li class="song_item">
+                    <span>05</span>
+                    <img src="img/music/9.jpg" alt="The Weeknd">
+                    <h5>
+                        Starboy
+                        <div class="subtitle">The Weeknd</div>
+                    </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="14"></i>
+                </li>
+            </div>
+        </div>
+    
+         <!--MAIN-->
+        <div class="song_side">
+            <nav>
+                <ul>
+                    <li>Discover <span></span></li>
+                    <li>MY LIBRARY</li>
+                    <li>RADIO</li>
+                </ul>
+                <div class="search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="Search Music...">
+                </div>
+                <div class="user">
+                    <img src="img/user.jpeg" alt="User" title="Arctic">
+                </div>
+            </nav>     
+
+             <!--LAST LISTENED-->
+             <div class="last_listened">
+                <h4>Your last listened songs</h4>
+                <p class="center">You haven't listened to anything yet!</p>
+            </div>
+          </div>
+          
+          
+
+
+    
+        <!-- PLAYER  -->
+        <div class="master_play">
+            <div class="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+            </div>
+            <img src="img/music/7.jpg" alt="a" id="poster_master_play">
+            <h5 id="title">The Ultracheese<br>
+                <div class="subtitle">Arctic Monkeys</div>
+            </h5>
+            <div class="icon">
+                <i class="bi bi-skip-start-fill" id="back"></i>
+                <i class="bi bi-play-fill" id="master_play"></i>
+                <i class="bi bi-skip-end-fill" id="next"></i>
+            </div>
+            <span id="current_start">0:00</span>
+            <div class="bar">
+                <input type="range" id="seek" min="0" value="0" max="100">
+                <div class="bar2" id="bar2"></div>
+                <div class="dot"></div>
+            </div>
+            <span id="current_end">0:00</span>
+    
+            <div class="vol">
+                <i class="bi bi-volume-down-fill" id="vol_icon"></i>
+                <input type="range" id="vol" min="0" value="30" max="100">
+                <div class="vol_bar"></div>
+                <div class="dot" id="vol_dot"></div>
+            </div>
+        </div>
+    </header>
+        <script src="app.js"></script>
+    </body>
+</html>
+
+
+
+
